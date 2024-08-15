@@ -1,0 +1,107 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #134b70 !important;
+  color: #eeeeee;
+}
+
+#navbar a {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+#navbar a:hover {
+  color: #508c9b;
+}
+
+/* Landing */
+#landing {
+  background-color: #eeeeee;
+}
+
+#landing p {
+  color: #201e43;
+}
+
+/* Projects */
+#projects {
+  background-color: #508c9b;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.carousel-item img {
+  border-radius: 0.5rem;
+}
+
+/* Tools */
+
+.tool-img {
+  max-width: 50px;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .tool-img {
+    max-width: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tool-img {
+    max-width: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .tool-img {
+    max-width: 30px;
+  }
+}
+
+/* Contact */
+#contact {
+  background-color: #eeeeee;
+}
+
+.contact-img {
+  width: 60px;
+  height: 60px;
+}
+
+.contact-img:hover {
+  transform: scale(1.1);
+}
+
+form {
+  background-color: #508c9b;
+  padding: 3rem;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: #201e43;
+  color: #eeeeee;
+}

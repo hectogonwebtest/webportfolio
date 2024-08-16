@@ -23,20 +23,100 @@ h2 {
 
 #navbar a:hover {
   color: #508c9b;
+  text-decoration: underline;
 }
 
 /* Landing */
 #landing {
-  background-color: #eeeeee;
+  background-color: #201e43;
+}
+
+h2 {
+  color: #eeeeee;
+}
+
+.my-name {
+  color: #4fc3f7;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.static {
+  color: #eeeeee;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 90px;
+  height: 90px;
+}
+
+.dynamic {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamic li {
+  list-style: none;
+  color: #4fc3f7;
+  font-size: 60px;
+  font-weight: 500;
+  top: 0;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -360px;
+  }
+}
+
+.dynamic li {
+  position: relative;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+}
+
+.dynamic li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #201e43;
+  border-left: 2px solid #4fc3f7;
+  animation: typing-animation 3s steps(12) infinite;
+}
+
+@keyframes typing-animation {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
 }
 
 #landing p {
-  color: #201e43;
+  color: #eeeeee;
+}
+
+#full-stack {
+  color: #4fc3f7;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /* Projects */
 #projects {
-  background-color: #508c9b;
+  background-color: #eeeeee;
 }
 
 .carousel-caption {
@@ -50,9 +130,19 @@ h2 {
 
 /* Tools */
 
+#tools {
+  background-color: #508c9b;
+}
+
 .tool-img {
   max-width: 50px;
   height: auto;
+  transition: max-width 0.3 ease;
+  padding: 10px;
+}
+
+.tool-img:hover {
+  filter: brightness(1.2);
 }
 
 @media (max-width: 992px) {
@@ -91,14 +181,27 @@ h2 {
   transform: scale(1.1);
 }
 
+#visit-heading {
+  color: #eeeeee;
+}
+
+#map {
+  background-color: black;
+}
 #map iframe {
   width: 100%;
+  top: 0;
+  left: 0;
   height: 450px;
   border: 0;
   max-width: 100%;
+  position: absolute;
+  filter: invert(2);
 }
 
 .map-container {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 450px;
   border: 0;
@@ -116,6 +219,6 @@ form {
 
 /* Footer */
 footer {
-  background-color: #201e43;
+  background-color: #134b70;
   color: #eeeeee;
 }

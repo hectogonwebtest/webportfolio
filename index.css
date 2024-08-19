@@ -69,6 +69,10 @@ h2 {
   height: auto;
 }
 
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
 h1 {
   color: #eeeeee;
 }

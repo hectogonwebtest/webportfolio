@@ -27,10 +27,10 @@
   </head>
   <body>
     <!-- Navbar START -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#landing" id="nav-logo">
-          It's <span id="my-name">NICOLE</span></a
+          Hey, it's <span id="my-name">NICOLE</span></a
         >
         <button
           class="navbar-toggler"
@@ -61,7 +61,6 @@
     <div class="video-background">
       <video autoplay loop muted playsinline>
         <source src="./videos/tech-orange.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
     </div>
 
@@ -71,12 +70,20 @@
         <div class="container col-10 px-4 py-5">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6 text-center text-lg-start">
-              <img
-                src="./images/me-profile.jpg"
-                class="d-block mx-lg-auto img-fluid rounded-circle flip-horizontal"
-                alt="me"
-                loading="lazy"
-              />
+              <div class="col-lg-10 profile-video-wrapper">
+                <video
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  class="d-block mx-lg-auto img-fluid profile-video"
+                >
+                  <source
+                    src="./videos/Woman-Programmer.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
             </div>
             <div class="col-lg-6">
               <h2 class="d-flex justify-content-center self-intro">I'm a</h2>
@@ -367,7 +374,7 @@
               </div>
               <button
                 type="submit"
-                class="btn form-btn btn-lg px-4 mt-4 me-md-2 rounded-pill"
+                class="btn form-btn btn-lg px-4 mt-4 me-md-2"
               >
                 Submit
               </button>

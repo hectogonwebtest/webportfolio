@@ -115,7 +115,8 @@ body {
 .section {
   position: relative;
   min-height: 100vh;
-  margin: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 /* Home */
@@ -168,7 +169,6 @@ img {
   transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-/* Hover effect: glowing/neon border and shadow */
 .feature:hover {
   border: 1px solid #fec448; /* Keep the same border color */
   box-shadow: 0 0 10px #fec448, 0 0 10px #fec448, 0 0 30px #fec448; /* Neon glow effect */

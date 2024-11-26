@@ -1,0 +1,280 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #ff651c;
+  --dark-color: #373737;
+}
+
+/* Light Theme (default) */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+
+.navbar.fixed-top {
+  height: 70px; /* Confirm this matches the navbar's actual height */
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px; /* Optional for better spacing */
+}
+
+/* Toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; /* Optional for spacing */
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  display: none !important;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-sun {
+  color: #f1c40f;
+  position: absolute;
+}
+
+.icon-moon {
+  color: #f39c12;
+  position: absolute;
+  opacity: 0.5; /* Default lower visibility for the moon */
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.checkbox:checked + .checkbox-label .icon-sun {
+  opacity: 0.5;
+}
+.checkbox:checked + .checkbox-label .icon-moon {
+  opacity: 1;
+}
+
+#checkbox {
+  display: none;
+}
+
+.colored-btn {
+  background-color: #fec448;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Body */
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  scroll-padding-top: 70px;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Home */
+.home-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.my-name {
+  font-weight: 600;
+  /* color: var(--dark-color); */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0 0 30px;
+}
+
+.home-intro h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  /* color: var(--dark-color); */
+  margin: 0 0 35px;
+  line-height: 1;
+}
+
+span {
+  border-bottom: 2px solid #fec448;
+}
+
+.home-intro p {
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.profile-img {
+  object-fit: cover;
+  /* border-radius: 50%; */
+  border: 2px solid #000;
+  position: relative;
+  z-index: 2;
+}
+
+.feature {
+  border: #fec448 1px solid;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+/* Services */
+
+.section-heading {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.section-heading h3 {
+  font-size: 3rem;
+  margin: 0;
+  /* color: var(--dark-color); */
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.accordion-item,
+.accordion-body,
+.accordion-button {
+  background-color: transparent !important; /* Reset background */
+  color: inherit !important; /* Reset text color */
+  border: none;
+}
+
+/* Portfolio */
+.portfolio-box .portfolio-img {
+  position: relative;
+  border: 2px solid var(--dark-color);
+  box-shadow: 0 0 0 0 var(--dark-color);
+  transition: 0.3s;
+}
+
+.portfolio-box .portfolio-img:hover {
+  box-shadow: 5px 5px 0 0 var(--dark-color);
+}
+
+.portfolio-box .portfolio-text span {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 101, 28, 0.2);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+}
+
+.portfolio-box .portfolio-text h4 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Testimonial */
+.glide__slide {
+  text-align: center;
+  padding: 20px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.glide__arrow {
+  background: #fec448;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.feature-box {
+  background: #f9f9f9; /* Light background for the box */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Reduce padding inside the feature box */
+  max-width: 90%; /* Ensure the content fits inside */
+  margin: 0 auto; /* Center content */
+}
+
+.testimonial-img img {
+  width: 100px; /* Reduce avatar size */
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact-container {
+  height: 100%;
+}
+.contact-row {
+  height: 100vh;
+}
+/* Map */
+
+#map iframe {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 450px;
+  border: 0;
+  max-width: 100%;
+  position: absolute;
+  filter: invert(2);
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  border: 0;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #001c30;
+  color: #eeeeee;
+}

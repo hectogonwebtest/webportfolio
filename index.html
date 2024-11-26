@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="" id="htmlPage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicole Deyro - Full Stack Developer</title>
+
+    <!-- Bootstrap Link v.5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Glide.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    
+     <!-- Box Icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+
+  <body>
+   
+    <!-- Header -->
+    <header class="main-header">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- Navbar Links -->
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#aboutme">About Me</a>
+              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#tools">Tools</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </div>
+    
+            <!-- Right-Aligned Items -->
+            <div class="ms-auto d-flex align-items-center">
+              <!-- Theme Toggle -->
+              <div class="theme-toggle">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                  <i class="bi bi-brightness-high-fill icon-sun"></i>
+                  <i class="bi bi-moon-stars-fill icon-moon"></i>
+                  <span class="ball"></span>
+                </label>
+              </div>
+    
+              <!-- Contact Button -->
+              <div class="ms-3 d-none d-lg-block">
+                <a class="colored-btn" href="#contact">Contact Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+
+    <!-- Sections -->
+
+    <!-- Landing Page -->
+    <section id="home" class="section">
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+            <img src="./images/small-3.png" class="d-block mx-auto img-fluid profile-img mt-5" alt="Bootstrap Themes" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <div class="home-intro text-center text-lg-start">
+              <h6 class="my-name">Hi, My name is Nicole.</h6>
+              <h1>I`m a 
+                <span id="type-it"></span></h1>
+              <p>Based in Tokyo, Japan.</p>
+              <a href="#about" class="colored-btn mt-1">About Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+
+    <!-- About Me -->
+    <section id="aboutme" class="section ">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 text-center">
+            <img src="./images/about-me.png" alt="" class="a">
+          </div>
+
+          <div class="col-lg-6 ps-lg-5">
+              <div class="about-text">
+                <h3 class="h1 mb-3  fw-semibold">
+                  I'm a freelancer with 5+ years of experience.
+                </h3>
+                <p>
+                  As a Full Stack Web Developer, I blend sleek design with powerful functionality to build websites and apps that captivate and perform. Mastering both front-end and back-end, I turn tech challenges into seamless solutions. Explore my portfolio to see how I transform ideas into stunning, efficient digital experiences.
+                </p>
+                <div class="row pt-2">
+                  <div class="col-6 col-md-4">
+                    <h5 class="text-primary fw-semibold fs-4 mb-0">
+                      250+
+                    </h5>
+                    <span class="about-projects">Projects Completed</span>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <h5 class="text-primary fw-semibold fs-4 mb-0">
+                      200+
+                    </h5>
+                    <span class="about-clients">Happy Clients</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h3>My Services</h3>
+        </div>
+        <div class="row g-4 pb-5 row-cols-1 row-cols-lg-3">
+
+          <!-- Frontend -->
+          <div class="feature col">
+            <div class="d-flex align-items-center my-3">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 me-3">
+              <i class="bi bi-window"></i>
+            </div>
+            <h3 class="fs-2 ">Frontend Development</h3>
+            </div>
+
+            <!-- Text -->
+            <p>Craft visually appealing, user-friendly interfaces with our expert frontend development services. We focus on creating responsive and interactive designs that deliver seamless user experiences across all devices.</p>
+           
+            
+            <!-- Accordion -->
+
+            <div class="accordion accordion-flush" id="accordionFlushExample" data-bs-theme="light">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#frontend-collapseOne" aria-expanded="false" aria-controls="frontend-collapseOne">
+                    Responsive Web Design
+                  </button>
+                </h2>
+                <div id="frontend-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Crafting visually stunning and mobile-friendly designs to ensure seamless user experiences across devices.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#frontend-collapseTwo" aria-expanded="false" aria-controls="frontend-collapseTwo">
+                  Interactive UI Development
+                  </button>
+                </h2>
+                <div id="frontend-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Building engaging and dynamic interfaces using modern JavaScript frameworks and libraries.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#frontend-collapseThree" aria-expanded="false" aria-controls="frontend-collapseThree">
+                    Cross-Browser Compatibility
+                  </button>
+                </h2>
+                <div id="frontend-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Ensuring consistent functionality and design across all major web browsers for a flawless user experience.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Backend -->
+          <div class="feature col">
+             <!-- Icon and Heading -->
+             <div class="d-flex align-items-center my-3">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 me-3">
+              <i class="bi bi-database"></i>
+            </div>
+            <h3 class="fs-2">Backend Development</h3>
+          </div>
+
+          <!-- Text -->
+            <p>Power your applications with robust and scalable backend solutions. Our backend development services ensure efficient data management, strong security, and smooth performance tailored to your needs..</p>
+          
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" id="accordionBackend">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#backend-collapseOne" aria-expanded="false" aria-controls="backend-collapseOne">
+                    API Development and Integration
+                  </button>
+                </h2>
+                <div id="backend-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Creating robust APIs and seamlessly integrating third-party services for smooth communication between systems.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#backend-collapseTwo" aria-expanded="false" aria-controls="backend-collapseTwo">
+                    Database Management
+                  </button>
+                </h2>
+                <div id="backend-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Designing and managing scalable databases to ensure efficient data storage and retrieval.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#backend-collapseThree" aria-expanded="false" aria-controls="backend-collapseThree">
+                    Authentication and Security
+                  </button>
+                </h2>
+                <div id="backend-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Implementing secure user authentication and data protection measures for reliable backend systems.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- FullStack -->
+          <div class="feature col">
+            <!-- Icon and Heading -->
+             <div class="d-flex align-items-center my-3">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 me-3">
+              <i class="bi bi-pc-display-horizontal"></i>
+            </div>
+            <h3 class="fs-2">Full Stack Development</h3>
+
+          </div>
+            <p>Leverage the best of both worlds with our full stack development services. From engaging frontends to efficient backends, we deliver end-to-end solutions for dynamic, feature-rich applications.</p>
+
+            <!-- Accordion -->
+            <div class="accordion accordion-flush" id="fullStack">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullstack-collapseOne" aria-expanded="false" aria-controls="fullstack-collapseOne">
+                    End-to-End Web Development
+                  </button>
+                </h2>
+                <div id="fullstack-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Delivering complete solutions by integrating frontend interfaces with robust backend systems.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullstack-collapseTwo" aria-expanded="false" aria-controls="fullstack-collapseTwo">
+                    Application Deployment
+                  </button>
+                </h2>
+                <div id="fullstack-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Managing the deployment process for scalable, high-performance applications.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullstack-collapseThree" aria-expanded="false" aria-controls="fullstack-collapseThree">
+                    Maintenance and Optimization
+                  </button>
+                </h2>
+                <div id="fullstack-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Providing ongoing support, updates, and performance enhancements for full-stack applications.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section id="tools" class="section ">
+        <div class="container">
+          <div class="row gy-5">
+              <div class="section-heading text-center">
+                <h3>Tools</h3>
+
+            <!-- Front End Div -->
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5">
+
+                  <!-- Front End -->
+                  <div class="col d-flex flex-column align-items-start gap-2">
+                    <!-- Image Container -->
+                    <div class="position-relative">
+                      <!-- Image -->
+                      <img src="./images/front-end.png" alt="Descriptive Alt Text" class="img-fluid">
+                    </div>
+                  </div>
+                  
+            
+                  <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+
+                      <!-- HTML -->
+                      <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(249, 134, 19, 1)"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
+                        </div>
+
+                        <h4 class="fw-semibold mb-0 ">HTML 5</h4>
+                        <p >HTML5 is the latest web standard, offering enhanced multimedia support and improved performance.</p>
+                      </div>
+            
+                      <!-- CSS -->
+                      <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(38, 123, 255, 1);"><path d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z"></path></svg>
+                        </div>
+          
+                        <h4 class="fw-semibold mb-0 ">CSS</h4>
+                        <p>CSS is the styling language used to create visually appealing and responsive web designs.</p>
+                      </div>
+            
+                      <!-- Bootstrap -->
+                      <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(76, 59, 255, 1);"><path d="M18.002 2.997H5.999A3.011 3.011 0 0 0 2.997 6v12.002a3.012 3.012 0 0 0 3.002 3.001h12.003a3.012 3.012 0 0 0 3.001-3.001V6a3.012 3.012 0 0 0-3.001-3.003zm-1.64 12.647c-.152.36-.389.68-.693.927a3.594 3.594 0 0 1-1.206.614c-.49.151-1.074.229-1.75.229H7.888V6.909h5.103c.943 0 1.7.213 2.267.646.569.436.854 1.082.854 1.958 0 .528-.13.983-.389 1.357-.259.373-.63.664-1.111.868v.034c.642.135 1.137.438 1.464.912.327.473.493 1.069.493 1.789 0 .405-.078.788-.225 1.147l.02.021v.003zm-2.084-2.589c-.309-.282-.739-.419-1.297-.419H9.737v3.276h3.253c.554 0 .991-.144 1.298-.435.308-.289.464-.701.464-1.229-.005-.518-.156-.919-.464-1.193h-.014.004zm-.451-2.119c.299-.251.444-.613.444-1.084 0-.526-.131-.902-.397-1.116-.264-.214-.646-.326-1.146-.326H9.727v2.898h3.001c.436.001.81-.127 1.099-.372z"></path></svg>
+                        </div>
+          
+                        <h4 class="fw-semibold mb-0">Boostrap</h4>
+                        <p>Bootstrap is a framework for building responsive, mobile-first websites with pre-designed components.</p>
+                      </div>
+            
+                      <!-- Javascript -->
+                      <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center ">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(251, 198, 55, 1);"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"></path></svg>
+                        </div>
+          
+                        <h4 class="fw-semibold mb-0">JavaScript</h4>
+                        <p>JavaScript is a language for adding interactivity and dynamic features to web pages.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            <!-- MERN Div-->
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5">
+
+              <!-- Icons -->
+              <div class="col">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+
+                  <!-- MongoDB -->
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(67, 127, 1, 1);"><path d="M13.74 4.23c-.84-1-1.57-2-1.71-2.22H12c-.14.21-.87 1.22-1.71 2.22-7.2 9.19 1.14 15.39 1.14 15.39l.07.05c.06.95.22 2.33.22 2.33h.62s.15-1.37.21-2.33l.07-.06s8.32-6.19 1.12-15.38zM12 19.48a3.48 3.48 0 0 1-.48-.48L12 9l.45 10a3.57 3.57 0 0 1-.45.48z"></path></svg>
+                    </div>
+
+                    <h4 class="fw-semibold mb-0">MongoDB</h4>
+                    <p>MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.</p>
+                  </div>
+        
+                  <!-- Express -->
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                        <path d="M49.729 11h-.85c-1.051 0-2.041.49-2.68 1.324l-8.7 11.377-8.7-11.377C28.162 11.49 27.171 11 26.121 11h-.85l10.971 14.346L25.036 40h.85c1.051 0 2.041-.49 2.679-1.324L37.5 26.992l8.935 11.684C47.073 39.51 48.063 40 49.114 40h.85L38.758 25.346 49.729 11zM21.289 34.242c-2.554 3.881-7.582 5.87-12.389 4.116C4.671 36.815 2 32.611 2 28.109L2 27h12v0h11l0-4.134c0-6.505-4.818-12.2-11.295-12.809C6.273 9.358 0 15.21 0 22.5l0 5.573c0 5.371 3.215 10.364 8.269 12.183 6.603 2.376 13.548-1.17 15.896-7.256 0 0 0 0 0 0h-.638C22.616 33 21.789 33.481 21.289 34.242zM2 22.5C2 16.71 6.71 12 12.5 12S23 16.71 23 22.5V25H2V22.5z"></path>
+                        </svg>
+                    </div>
+      
+                    <h4 class="fw-semibold mb-0">ExpressJS</h4>
+                    <p>Express.js is a fast, minimalist web framework for building Node.js applications and APIs.</p>
+                  </div>
+        
+                  <!-- React -->
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(75, 168, 255, 1);"><circle cx="12" cy="11.245" r="1.785"></circle><path d="m7.002 14.794-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452 0-1.452 1.684-2.711 4.617-3.452l.395-.1.111.391a19.507 19.507 0 0 0 1.136 2.983l.085.178-.085.178c-.46.963-.841 1.961-1.136 2.985l-.111.39zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542 0 .954 1.368 1.913 3.598 2.54.273-.868.603-1.717.985-2.54a20.356 20.356 0 0 1-.985-2.542zm10.572 6.095-.11-.392a19.628 19.628 0 0 0-1.137-2.984l-.085-.177.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39.395.1c2.935.741 4.617 2 4.617 3.453 0 1.452-1.683 2.711-4.617 3.452l-.395.101zm-.41-3.553c.4.866.733 1.718.987 2.54 2.23-.627 3.599-1.586 3.599-2.54 0-.956-1.368-1.913-3.599-2.542a20.683 20.683 0 0 1-.987 2.542z"></path><path d="m6.419 8.695-.11-.39c-.826-2.908-.576-4.991.687-5.717 1.235-.715 3.222.13 5.303 2.265l.284.292-.284.291a19.718 19.718 0 0 0-2.02 2.474l-.113.162-.196.016a19.646 19.646 0 0 0-3.157.509l-.394.098zm1.582-5.529c-.224 0-.422.049-.589.145-.828.477-.974 2.138-.404 4.38.891-.197 1.79-.338 2.696-.417a21.058 21.058 0 0 1 1.713-2.123c-1.303-1.267-2.533-1.985-3.416-1.985zm7.997 16.984c-1.188 0-2.714-.896-4.298-2.522l-.283-.291.283-.29a19.827 19.827 0 0 0 2.021-2.477l.112-.16.194-.019a19.473 19.473 0 0 0 3.158-.507l.395-.1.111.391c.822 2.906.573 4.992-.688 5.718a1.978 1.978 0 0 1-1.005.257zm-3.415-2.82c1.302 1.267 2.533 1.986 3.415 1.986.225 0 .423-.05.589-.145.829-.478.976-2.142.404-4.384-.89.198-1.79.34-2.698.419a20.526 20.526 0 0 1-1.71 2.124z"></path><path d="m17.58 8.695-.395-.099a19.477 19.477 0 0 0-3.158-.509l-.194-.017-.112-.162A19.551 19.551 0 0 0 11.7 5.434l-.283-.291.283-.29c2.08-2.134 4.066-2.979 5.303-2.265 1.262.727 1.513 2.81.688 5.717l-.111.39zm-3.287-1.421c.954.085 1.858.228 2.698.417.571-2.242.425-3.903-.404-4.381-.824-.477-2.375.253-4.004 1.841.616.67 1.188 1.378 1.71 2.123zM8.001 20.15a1.983 1.983 0 0 1-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391.395.1c.964.243 2.026.414 3.158.507l.194.019.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522zm-.993-5.362c-.57 2.242-.424 3.906.404 4.384.825.47 2.371-.255 4.005-1.842a21.17 21.17 0 0 1-1.713-2.123 20.692 20.692 0 0 1-2.696-.419z"></path><path d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017-.113-.162a25.697 25.697 0 0 1-1.126-1.769 26.028 26.028 0 0 1-.971-1.859l-.084-.177.084-.179c.299-.632.622-1.252.971-1.858.347-.596.726-1.192 1.126-1.77l.113-.16.196-.018a25.148 25.148 0 0 1 4.198 0l.194.019.113.16a25.136 25.136 0 0 1 2.1 3.628l.083.179-.083.177a24.742 24.742 0 0 1-2.1 3.628l-.113.162-.194.017c-.706.057-1.412.087-2.098.087zm-1.834-.904c1.235.093 2.433.093 3.667 0a24.469 24.469 0 0 0 1.832-3.168 23.916 23.916 0 0 0-1.832-3.168 23.877 23.877 0 0 0-3.667 0 23.743 23.743 0 0 0-1.832 3.168 24.82 24.82 0 0 0 1.832 3.168z"></path></svg>
+                    </div>
+      
+                    <h4 class="fw-semibold mb-0">React</h4>
+                    <p>React is a JavaScript library for building user interfaces with reusable components and efficient rendering.</p>
+                  </div>
+        
+                  <!-- Node -->
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center ">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(158, 249, 59, 1);"><path d="M12 21.985c-.275 0-.532-.074-.772-.202l-2.439-1.448c-.365-.203-.182-.277-.072-.314.496-.165.588-.201 1.101-.493.056-.037.129-.02.185.017l1.87 1.12c.074.036.166.036.221 0l7.319-4.237c.074-.036.11-.11.11-.202V7.768c0-.091-.036-.165-.11-.201l-7.319-4.219c-.073-.037-.165-.037-.221 0L4.552 7.566c-.073.036-.11.129-.11.201v8.457c0 .073.037.166.11.202l2 1.157c1.082.548 1.762-.095 1.762-.735V8.502c0-.11.091-.221.22-.221h.936c.108 0 .22.092.22.221v8.347c0 1.449-.788 2.294-2.164 2.294-.422 0-.752 0-1.688-.46l-1.925-1.099a1.55 1.55 0 0 1-.771-1.34V7.786c0-.55.293-1.064.771-1.339l7.316-4.237a1.637 1.637 0 0 1 1.544 0l7.317 4.237c.479.274.771.789.771 1.339v8.458c0 .549-.293 1.063-.771 1.34l-7.317 4.236c-.241.11-.516.165-.773.165zm2.256-5.816c-3.21 0-3.87-1.468-3.87-2.714 0-.11.092-.221.22-.221h.954c.11 0 .201.073.201.184.147.971.568 1.449 2.514 1.449 1.54 0 2.202-.35 2.202-1.175 0-.477-.185-.825-2.587-1.063-1.999-.2-3.246-.643-3.246-2.238 0-1.485 1.247-2.366 3.339-2.366 2.347 0 3.503.809 3.649 2.568a.297.297 0 0 1-.056.165c-.037.036-.091.073-.146.073h-.953a.212.212 0 0 1-.202-.164c-.221-1.012-.789-1.34-2.292-1.34-1.689 0-1.891.587-1.891 1.027 0 .531.237.696 2.514.99 2.256.293 3.32.715 3.32 2.294-.02 1.615-1.339 2.531-3.67 2.531z"></path></svg>
+                    </div>
+      
+                    <h4 class="fw-semibold mb-0">NodeJS</h4>
+                    <p>Node.js is a JavaScript runtime for building scalable, server-side applications.</p>
+                  </div>
+                </div>
+              </div>
+            
+               <!-- MERN -->
+               <div class="col d-flex flex-column align-items-start gap-2">
+                <!-- Image Container -->
+                <div class="position-relative">
+                  <!-- Image -->
+                  <img src="./images/MERN.png" alt="Descriptive Alt Text" class="img-fluid flex-row-reverse">
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="portfolio" class="section bg-gray" data-scroll-index="4">
+      <div class="container">
+        <div class="section-heading">
+          <h3>Latest Projects</h3>        
+           
+        </div>
+        <div class="portfolio-box">
+
+          <!-- Flowershop -->
+          <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 justify-content-around align-items-center">
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-img">
+                <img src="./images/petalsandbloom.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-text">
+                <span>Web Design</span>
+                <h4>Website Design and Development for Startup</h4>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, incidunt? Cupiditate, in at. Voluptates sequi, nesciunt tenetur tempora voluptatibus earum architecto numquam sed laudantium qui quos? Ad ut deserunt accusamus?</p>
+                <a href="https://hectogonwebtest.github.io/flowershop/" class="colored-btn mt-1">Live Demo</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Educational Website -->
+          <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 justify-content-around align-items-center flex-row-reverse">
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-img">
+                <img src="./images/eduquest.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-text">
+                <span>Mobile App</span>
+                <h4>Mobile App Design and Development</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, incidunt? Cupiditate, in at. Voluptates sequi, nesciunt tenetur tempora voluptatibus earum architecto numquam sed laudantium qui quos? Ad ut deserunt accusamus?</p>
+                <a href="https://hectogonwebtest.github.io/eduquest/" class="colored-btn mt-1">Live Demo</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Dessert Shop -->
+          <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3  justify-content-around align-items-center">
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-img">
+                <img src="./images/dessert-haven.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-text">
+                <span>Web Design</span>
+                <h4>Website Design and Development for Startup</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, incidunt? Cupiditate, in at. Voluptates sequi, nesciunt tenetur tempora voluptatibus earum architecto numquam sed laudantium qui quos? Ad ut deserunt accusamus?</p>
+                <a href="http://zuitt-bootcamp-prod-461-7639-deyro.s3-website.us-east-1.amazonaws.com/" class="colored-btn mt-1">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Testimonial -->
+  <section id="testimonial" class="section">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="section-heading">
+          <h3>Testimonial</h3>            
+        </div>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+
+              <!-- Person 1 -->
+              <li class="glide__slide">
+                <div class="feature-box mb-4">
+                  <div class="testimonial-img">
+                    <img src="./images/avatar-1.png" class="avatar-img" alt="">
+                  </div>
+                  <div class="content">
+                    <p class="mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptates pariatur porro excepturi nam adipisci reiciendis culpa recusandae.
+                    </p>
+                    <h6 class="mb-0 text-dark fw-semibold">Tom Cruise</h6>
+                    <small>CEO at ABC Tech</small>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 2 -->
+              <li class="glide__slide">
+                <div class="feature-box mb-4">
+                  <div class="testimonial-img">
+                    <img src="./images/avatar-2.png" class="avatar-img" alt="">
+                  </div>
+                  <div class="content">
+                    <p class="mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptates pariatur porro excepturi nam adipisci reiciendis culpa recusandae.
+                    </p>
+                    <h6 class="mb-0 text-dark fw-semibold">Jennifer Lopez</h6>
+                    <small>CEO at XYZ, Inc.</small>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Person 3 -->
+              <li class="glide__slide">
+                <div class="feature-box mb-4">
+                  <div class="testimonial-img">
+                    <img src="./images/avatar-3.png" class="avatar-img" alt="">
+                  </div>
+                  <div class="content">
+                    <p class="mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptates pariatur porro excepturi nam adipisci reiciendis culpa recusandae.
+                    </p>
+                    <h6 class="mb-0 text-dark fw-semibold">Nicole Kidman</h6>
+                    <small>CEO at WWW & Co.</small>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        
+          <!-- Navigation -->
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">«</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">»</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="section-heading">
+            <h3>Contact</h3>            
+          </div>
+          <!-- Left Column -->
+          <div class="col-lg-7 text-center text-lg-start position-relative overflow-hidden" style="min-height: 100%;">
+    
+            <!-- Content -->
+            <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center section-heading">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7477988373275!2d139.74286334041702!3d35.65858483133134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2sTokyo%20Tower!5e0!3m2!1sen!2sjp!4v1723636644638!5m2!1sen!2sjp"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+          <!-- Right Column Form -->
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+              <div class="form-floating mb-3 text-dark">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Jane Doe">
+                <label for="floatingInput">Name</label>
+              </div>
+              <div class="form-floating mb-3 text-dark">
+                <input type="email" class="form-control" id="floatingPassword" placeholder="name@email.com">
+                <label for="floatingPassword">Email Address</label>
+              </div>
+              <div class="form-floating mb-3 text-dark">
+                <textarea class="form-control" id="floatingTextarea" placeholder="Leave a comment here" style="height: 100px;"></textarea>
+                <label for="floatingTextarea">Leave a message here.</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Send Message</button>
+              <hr class="my-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Map START -->
+    <section id="map">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center section-heading">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7477988373275!2d139.74286334041702!3d35.65858483133134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2sTokyo%20Tower!5e0!3m2!1sen!2sjp!4v1723636644638!5m2!1sen!2sjp"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 py-2">
+            <div class="nav justify-content-center justify-content-md-start">
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+              <a href="#"><i class="bx bxl-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 py-2 text-center text-md-end">
+            <p class="m-0">
+              &copy; 2024 | Developed by <a href="#">Nicole Dy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Glider -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
+    <!-- Typed -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- JS External -->
+    <script src="./app.js"></script>
+  </body>
+</html>

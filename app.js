@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   new Glide(".glide", {
     type: "carousel", // Options: 'carousel', 'slider'
     startAt: 0, // Start at the first slide
-    perView: 1, // Number of slides visible at a time
+    perView: 3, // Number of slides visible at a time
     gap: 10, // Space between slides
     autoplay: 3000, // Autoplay speed in milliseconds
     hoverpause: true, // Pause on hover

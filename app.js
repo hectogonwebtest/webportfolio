@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hoverpause: true, // Pause on hover
     animationDuration: 800, // Transition duration
     breakpoints: {
-      768: { perView: 2 },
+      768: { perView: 1 },
       1024: { perView: 3 },
     },
   }).mount();

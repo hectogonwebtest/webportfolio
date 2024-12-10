@@ -116,7 +116,6 @@ body {
   position: relative;
   min-height: 100vh;
   padding: 50px 50px; /* Add padding instead of margin */
-  margin: 0 auto; /* Center horizontally */
 }
 
 /* Home */
@@ -174,7 +173,6 @@ img {
 }
 
 .section-heading h3 {
-  margin: 15px 0;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 4px;
